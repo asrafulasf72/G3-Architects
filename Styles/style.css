@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+.bg-colour{
+    background-color: rgba(129, 88, 40, 10%);
+}
+/* Sheared Style */
+.display-flex{
+    display: flex;
+}
+.brand, .h-img, .featues{
+        max-width: 1440px;
+        margin: 0 auto;
+}
+.brand{
+     padding-top: 63px;
+}
+.p-btn{
+    border: none;
+    background-color: #FF900E;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    max-width: 180px;
+    height: 64px;
+    padding: 20px 25px;
+    margin-top: 20px;
+}
+
+/* Header Style  */
+
+.display-flex li{
+    list-style: none;
+}
+.display-flex li a{
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+}
+.brand{
+    justify-content: space-between;
+}
+.logo h2{
+    font-weight:bold ;
+    font-size: 3rem;
+}
+.link-title{
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.grating{
+    max-width: 862px;
+    margin: 0 auto;
+    margin-top: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.g-title{
+    font-weight: bold;
+    font-size: 64px;
+}
+.g-des{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+    margin-top: 25px;
+}
+.h-img{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.b-img{
+    max-width: 100%;
+}
+/* Featues Section Design start*/ 
+.featues{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    
+}
+.img-con{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.f-content{
+    justify-content: center;
+    align-items: center;
+}
+.f-i{
+    border-radius: 8px;
+}
+.f-content div{
+    padding-left: 73px;
+}
+.f-des{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+}
+#list{
+    font-weight: 500;
+    font-size: 3rem;
+    color: #727272;
+}
+#of{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #131313;
+}
+#fe{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #FF900E;
+}
+
+
+
+
+@media screen and (max-width:576px){
+    .brand, .featues{
+        flex-direction: column;
+    }
+    .logo{
+        justify-items: center;
+    }
+    .img-con{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .featues{ 
+        margin: 0 auto;
+    }
+}
